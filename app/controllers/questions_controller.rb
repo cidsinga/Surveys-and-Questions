@@ -1,5 +1,6 @@
 class QuestionsController < ApplicationController
   def new
+    # binding.pry
     @survey = Survey.find(params[:survey_id])
     @question = @survey.questions.new
     render :new
@@ -44,7 +45,7 @@ class QuestionsController < ApplicationController
 
   private
     def question_params
-      params.require(:question).permit(:query)
+      params.require(:question).permit(:querys)
     end
 
 end

@@ -1,7 +1,7 @@
 <h1>Add a new question:</h1>
 
-<%= form_for [@album, @question] do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+<%= form_for [@survey, @question] do |f| %>
+  <%= f.label :querys %>
+  <%= f.text_field :querys %>
   <p><%= f.submit %></p>
 <% end %>
